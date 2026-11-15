@@ -5,7 +5,7 @@ const weddingData = {
             arabicName: '',
             qualification: 'MBA (Sales & Marketing)',
             parents: 'Son of Mrs. & Mr. Mohammed Abdul Rub',
-            familyDetails: ['chacha ka occupation aata yaha'],
+            familyDetails: [''],
         },
 
         bride: {
@@ -13,18 +13,18 @@ const weddingData = {
             arabicName: '',
             qualification: 'D.Ed',
             parents: 'Daughter of late Mr. Mohammed Naseer Ahmed',
-            familyDetails: ['dhulan ke dad ka occupation aata yaha'],
+            familyDetails: [''],
         },
     },
 
     guardians: [{
         names: 'Mrs. & Mr. Mohammed Abdul rub',
-        designation: 'chacha ka occupation',
+        designation: '',
     },
     {
         names: 'Mrs. & Mr. Mohammed Naseer Ahmed',
         // qualification: 'dulhan ke dad ka qualification',
-        designation: 'dulhan ke dad ka occupation',
+        designation: '',
     },
     ],
 
