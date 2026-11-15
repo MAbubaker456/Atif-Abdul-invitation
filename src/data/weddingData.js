@@ -22,7 +22,7 @@ const weddingData = {
         designation: '',
     },
     {
-        names: 'Mrs. & Mr. Mohammed Naseer Ahmed',
+        names: 'Late Mr. Mohammed Naseer Ahmed',
         // qualification: 'dulhan ke dad ka qualification',
         designation: '',
     },
