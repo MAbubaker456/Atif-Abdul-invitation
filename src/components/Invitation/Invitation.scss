@@ -1,19 +1,21 @@
 @use '../../styles/abstracts/variables' as *;
+
 .invitation-section {
-    --inv-purple: #4b0750;
-    --inv-deep-purple: #310c35;
-    --inv-gold: #b5965a;
-    --inv-gold-light: #e8d3a5;
-    --inv-ivory: #fbf8f2;
+    --inv-navy: #173B70;
+    --inv-midnight: #102A50;
+    --inv-royal: #2563EB;
+    --inv-royal-dark: #1D4ED8;
+    --inv-gold: #C49A52;
+    --inv-gold-light: #F4E8CC;
+    --inv-ivory: #F8FBFF;
     position: relative;
     isolation: isolate;
     width: 100%;
     min-height: 100vh;
     padding: 100px 30px 65px;
     overflow: hidden;
-    // background: radial-gradient( ellipse at 50% 35%, rgba(255, 255, 255, 0.95), transparent 65%), linear-gradient( 135deg, #fbf8f2, #f5eee5);
-    background: $color-purple;
-    color: #584334;
+    background: radial-gradient(ellipse at 50% 25%, #173B70 0%, #102A50 75%);
+    color: var(--inv-ivory);
 }
 
 .text-light-gold {
@@ -28,7 +30,7 @@
     position: absolute;
     z-index: -1;
     inset: 0;
-    background: radial-gradient( circle at 8% 30%, rgba(75, 7, 80, 0.07), transparent 25%), radial-gradient( circle at 90% 75%, rgba(181, 150, 90, 0.13), transparent 30%);
+    background: radial-gradient( circle at 8% 30%, rgba(37, 99, 235, 0.15), transparent 25%), radial-gradient( circle at 90% 75%, rgba(196, 154, 82, 0.15), transparent 30%);
 }
 
 .invitation-section-inner {
@@ -46,7 +48,7 @@
 
 .invitation-top-label span {
     padding: 9px 22px;
-    border: 1px solid rgba(181, 150, 90, 0.5);
+    border: 1px solid rgba(196, 154, 82, 0.5);
     color: var(--inv-gold-light);
     font-family: 'Lato', sans-serif;
     font-size: 10px;
@@ -58,17 +60,17 @@
     width: min(100%, 1050px);
     margin: 0 auto;
     padding: 65px clamp(20px, 5vw, 80px);
-    border: 1px solid rgba(181, 150, 90, 0.55);
+    border: 1px solid rgba(196, 154, 82, 0.55);
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 25px 75px rgba(49, 12, 53, 0.045), inset 0 0 60px rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 25px 75px rgba(16, 42, 80, 0.5), inset 0 0 60px rgba(255, 255, 255, 0.06);
 }
 
 .invitation-main-content::before {
     position: absolute;
     content: '';
     inset: 10px;
-    border: 1px solid rgba(181, 150, 90, 0.22);
+    border: 1px solid rgba(196, 154, 82, 0.25);
     pointer-events: none;
 }
 
@@ -130,7 +132,7 @@
 .invitation-message {
     max-width: 650px;
     margin: 18px auto 0;
-    color: #705b4c;
+    color: var(--inv-ivory);
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 1.9;
@@ -147,10 +149,11 @@
 
 .invitation-small-heading {
     margin-bottom: 24px;
-    color: #9b805a;
+    color: var(--inv-gold-light);
     font-family: 'Lato', sans-serif;
     font-size: 10px;
     letter-spacing: 0.24em;
+    font-weight: 700;
 }
 
 .guardians-list {
@@ -163,14 +166,14 @@
 
 .guardian-item {
     padding: 22px 18px;
-    border: 1px solid rgba(181, 150, 90, 0.32);
-    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(196, 154, 82, 0.35);
+    background: rgba(255, 255, 255, 0.06);
     border-radius: 13px;
 }
 
 .guardian-item h3 {
     margin: 0 0 9px;
-    color: var(--inv-purple);
+    color: var(--inv-gold-light);
     font-family: 'Cormorant Garamond', serif;
     font-size: 25px;
     font-weight: 500;
@@ -178,9 +181,10 @@
 
 .guardian-item p {
     margin: 4px 0;
-    color: #806b56;
-    font-size: 12px;
+    color: var(--inv-ivory);
+    font-size: 13px;
     line-height: 1.7;
+    font-weight: 500;
 }
 
 
@@ -193,8 +197,8 @@
     gap: 35px;
     margin: 55px auto;
     padding: 45px 25px;
-    border-top: 1px solid rgba(181, 150, 90, 0.35);
-    border-bottom: 1px solid rgba(181, 150, 90, 0.35);
+    border-top: 1px solid rgba(196, 154, 82, 0.35);
+    border-bottom: 1px solid rgba(196, 154, 82, 0.35);
 }
 
 .couple-profile {
@@ -204,16 +208,16 @@
 .couple-role {
     display: inline-block;
     margin-bottom: 13px;
-    color: #a28659;
+    color: var(--inv-gold-light);
     font-family: 'Lato', sans-serif;
     font-size: 10px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.25em;
 }
 
 .couple-profile h3 {
     margin: 0 0 10px;
-    color: var(--inv-purple);
+    color: var(--inv-gold-light);
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(31px, 4vw, 43px);
     font-style: italic;
@@ -222,17 +226,19 @@
 }
 
 .couple-qualification {
-    color: #98784e;
+    color: var(--inv-ivory);
     font-size: 12px;
+    font-weight: 600;
 }
 
 .couple-family,
 .couple-detail {
     margin: 9px 0 0;
-    color: #765f4b;
+    color: var(--inv-ivory);
     font-family: 'Lato', sans-serif;
     font-size: 13px;
     line-height: 1.7;
+    font-weight: 500;
 }
 
 .couple-ampersand {
@@ -264,14 +270,15 @@
 
 .invitation-nikah-label {
     margin: 0;
-    color: #9b805a;
+    color: var(--inv-gold-light);
     font-size: 11px;
     letter-spacing: 0.28em;
+    font-weight: 700;
 }
 
 .invitation-date-block h3 {
     margin: 7px 0 15px;
-    color: var(--inv-purple);
+    color: var(--inv-gold-light);
     font-family: 'Cormorant Garamond', serif;
     font-size: 38px;
     font-weight: 600;
@@ -279,24 +286,25 @@
 }
 
 .invitation-day {
-    color: #806b56;
+    color: var(--inv-ivory);
     font-family: 'Cormorant Garamond', serif;
     font-size: 22px;
 }
 
 .invitation-date {
     margin: 8px 0;
-    color: var(--inv-purple);
+    color: var(--inv-gold-light);
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(28px, 4vw, 39px);
     font-weight: 600;
 }
 
 .invitation-hijri {
-    color: #9b805a;
+    color: var(--inv-ivory);
     font-family: 'Cormorant Garamond', serif;
     font-size: 17px;
     font-style: italic;
+    font-weight: 600;
 }
 
 .invitation-date-star {
@@ -353,6 +361,8 @@
     font-size: 9px;
     font-style: normal;
     letter-spacing: 0.3em;
+    color: var(--inv-gold-light);
+    font-weight: 600;
 }
 
 
@@ -406,94 +416,4 @@
         font-size: 8px;
         letter-spacing: 0.2em;
     }
-}
-
-
-/* =====================================
-   INVITATION TEXT CONTRAST FIX
-   Preserve existing backgrounds/design
-===================================== */
-
-.invitation-section-title,
-.invitation-bismillah,
-.guardian-item h3,
-.couple-profile h3,
-.invitation-date-block h3,
-.invitation-date {
-    color: var(--inv-gold-light);
-}
-
-
-/* Main invitation message */
-
-.invitation-message {
-    color: var(--inv-ivory);
-}
-
-
-/* Guardian information */
-
-.invitation-small-heading {
-    color: var(--inv-gold-light);
-    font-weight: 700;
-}
-
-.guardian-item p {
-    color: var(--inv-ivory);
-    font-size: 13px;
-    font-weight: 500;
-}
-
-
-/* Groom and bride information */
-
-.couple-role {
-    color: var(--inv-gold-light);
-    font-weight: 700;
-}
-
-.couple-qualification {
-    color: var(--inv-ivory);
-    font-weight: 600;
-}
-
-.couple-family,
-.couple-detail {
-    color: var(--inv-ivory);
-    font-weight: 500;
-}
-
-
-/* Wedding date information */
-
-.invitation-nikah-label {
-    color: var(--inv-gold-light);
-    font-weight: 700;
-}
-
-.invitation-day {
-    color: var(--inv-ivory);
-}
-
-.invitation-hijri {
-    color: var(--inv-ivory);
-    font-weight: 600;
-}
-
-
-/* Decorative text */
-
-.invitation-overline {
-    color: var(--inv-ivory);
-    font-weight: 700;
-}
-
-.invitation-top-label span {
-    color: var(--inv-gold-light);
-    font-weight: 700;
-}
-
-.invitation-bottom-ornament i {
-    color: var(--inv-gold-light);
-    font-weight: 600;
 }

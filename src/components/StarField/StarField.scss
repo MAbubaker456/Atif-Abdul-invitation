@@ -12,14 +12,14 @@
     display: block;
     border-radius: 50%;
     opacity: 0.35;
-    background: #d8bd82;
-    box-shadow: 0 0 5px rgba(216, 189, 130, 0.8), 0 0 12px rgba(181, 150, 90, 0.45);
+    background: #D8B978;
+    box-shadow: 0 0 5px rgba(216, 185, 120, 0.8), 0 0 12px rgba(196, 154, 82, 0.45);
     will-change: transform, opacity;
 }
 
 .ambient-star-large {
-    background: #f2dfb5;
-    box-shadow: 0 0 7px rgba(242, 223, 181, 0.9), 0 0 18px rgba(181, 150, 90, 0.65), 0 0 28px rgba(75, 7, 80, 0.2);
+    background: #F4E8CC;
+    box-shadow: 0 0 7px rgba(244, 232, 204, 0.9), 0 0 18px rgba(196, 154, 82, 0.65), 0 0 28px rgba(37, 99, 235, 0.18);
 }
 
 @media (max-width: 600px) {

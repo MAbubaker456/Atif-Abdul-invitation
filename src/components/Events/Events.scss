@@ -1,10 +1,11 @@
 @use '../../styles/abstracts/variables' as *;
+
 // ========================================
 // EVENTS SECTION
 // ========================================
 .events-section {
     padding: 100px 24px 0px;
-    background: radial-gradient( ellipse at 50% 30%, rgba(255, 255, 255, 0.95), transparent 75%), $color-ivory;
+    background: radial-gradient( ellipse at 50% 30%, rgba(255, 255, 255, 0.95), transparent 75%), #F8FBFF;
 }
 
 .events-container {
@@ -22,7 +23,7 @@
 }
 
 .events-eyebrow {
-    color: $color-gold;
+    color: #C49A52;
     font-size: 10px;
     font-weight: $weight-bold;
     letter-spacing: 4px;
@@ -30,7 +31,7 @@
 }
 
 .events-heading h2 {
-    color: $color-purple;
+    color: #173B70;
     font-family: $font-heading;
     font-size: clamp(43px, 7vw, 62px);
     font-style: italic;
@@ -38,7 +39,7 @@
 }
 
 .events-description {
-    color: $color-text-secondary;
+    color: #64748B;
     font-size: 14px;
     line-height: 1.9;
     max-width: 460px;
@@ -51,12 +52,12 @@
     align-items: center;
     gap: 5px;
     span {
-        color: $color-text-muted;
+        color: #94A3B8;
         font-size: 11px;
         letter-spacing: 2px;
     }
     strong {
-        color: $color-bronze;
+        color: #173B70;
         font-family: $font-heading;
         font-size: 29px;
         font-weight: $weight-semibold;
@@ -75,21 +76,21 @@
 
 .event-card {
     position: relative;
-    background: #fffdf9;
-    border: 1px solid rgba($color-gold, 0.5);
-    box-shadow: $shadow-soft;
+    background: #FFFFFF;
+    border: 1px solid rgba(196, 154, 82, 0.45);
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.08);
     padding: 12px;
     transition: transform $transition-normal, box-shadow $transition-normal;
     &::before {
         content: '';
         position: absolute;
         inset: 6px;
-        border: 1px solid rgba($color-gold, 0.25);
+        border: 1px solid rgba(196, 154, 82, 0.25);
         pointer-events: none;
     }
     &:hover {
         transform: translateY(-5px);
-        box-shadow: 0 15px 35px rgba(49, 12, 53, 0.1);
+        box-shadow: 0 15px 35px rgba(23, 59, 112, 0.12);
     }
 }
 
@@ -99,7 +100,7 @@
 .event-card-header {
     text-align: center;
     padding: 35px 15px 25px;
-    background: $color-purple-soft;
+    background: #EDF4FF;
     position: relative;
 }
 
@@ -107,7 +108,7 @@
     position: absolute;
     top: 15px;
     left: 18px;
-    color: rgba($color-purple, 0.4);
+    color: rgba(37, 99, 235, 0.45);
     font-family: $font-heading;
     font-size: 18px;
 }
@@ -116,31 +117,31 @@
     width: 52px;
     height: 52px;
     margin: 0 auto 15px;
-    border: 1px solid rgba($color-gold, 0.65);
+    border: 1px solid rgba(196, 154, 82, 0.65);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $color-purple;
-    background: #fffdf9;
+    color: #2563EB;
+    background: #FFFFFF;
 }
 
 .event-category {
-    color: $color-bronze;
+    color: #A9823F;
     font-size: 9px;
     letter-spacing: 2px;
     font-weight: $weight-bold;
 }
 
 .event-card-header h3 {
-    color: $color-purple;
+    color: #173B70;
     font-size: clamp(27px, 4vw, 37px);
     margin-top: 7px;
 }
 
 .event-divider {
     display: block;
-    color: $color-gold;
+    color: #C49A52;
     margin-top: 10px;
 }
 
@@ -157,7 +158,7 @@
     align-items: flex-start;
     gap: 13px;
     margin-bottom: 23px;
-    color: $color-gold;
+    color: #C49A52;
     >svg {
         flex-shrink: 0;
         margin-top: 3px;
@@ -167,14 +168,14 @@
     }
     span {
         display: block;
-        color: $color-text-muted;
+        color: #94A3B8;
         font-size: 10px;
         letter-spacing: 1.5px;
         text-transform: uppercase;
         margin-bottom: 5px;
     }
     p {
-        color: $color-text-primary;
+        color: #263B5E;
         font-size: 13px;
         line-height: 1.7;
     }
@@ -184,11 +185,11 @@
     font-family: $font-heading;
     font-size: 20px !important;
     font-weight: $weight-semibold;
-    color: $color-purple !important;
+    color: #173B70 !important;
 }
 
 .event-address {
-    color: $color-text-secondary !important;
+    color: #64748B !important;
     margin-top: 3px;
 }
 
@@ -202,20 +203,25 @@
     gap: 10px;
     width: 100%;
     padding: 13px 15px;
-    background: transparent;
-    border: 1px solid $color-gold;
-    color: $color-purple;
+    background: #EDF4FF;
+    border: 1px solid #C49A52;
+    color: #2563EB;
     font-size: 11px;
     font-weight: $weight-bold;
     letter-spacing: 1px;
-    transition: background $transition-normal, color $transition-normal;
+    border-radius: 6px;
+    transition: background $transition-normal, color $transition-normal, border-color $transition-normal;
     span {
         font-size: 15px;
     }
     &:hover {
-        background: $color-purple;
-        color: $color-white;
-        border-color: $color-purple;
+        background: #2563EB;
+        color: #FFFFFF;
+        border-color: #2563EB;
+    }
+    &:focus-visible {
+        outline: 2px solid #2563EB;
+        outline-offset: 3px;
     }
 }
 
@@ -230,12 +236,12 @@
     margin-top: 55px;
     text-align: center;
     span {
-        color: $color-gold;
+        color: #C49A52;
         font-family: $font-heading;
         font-size: 32px;
     }
     p {
-        color: $color-text-secondary;
+        color: #64748B;
         font-family: $font-heading;
         font-size: 20px;
         font-style: italic;

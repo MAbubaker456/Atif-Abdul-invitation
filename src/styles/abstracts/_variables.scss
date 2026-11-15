@@ -1,35 +1,55 @@
 // ========================================
 // WEDDING INVITATION - DESIGN TOKENS
+// Royal Blue & Champagne Gold Palette
 // ========================================
-// Colors
-$color-ivory: #f8f4ec;
-$color-champagne: #ede4d5;
-$color-gold: #b5965a;
-$color-bronze: #6d5638;
-$color-brown: #44382f;
-$color-white: #ffffff;
-$color-text-primary: #44382f;
-$color-text-secondary: #806d58;
-$color-text-muted: #a09280;
-// Additional wedding accent colors
-$color-purple: #4b0750;
-$color-purple-light: #6b286b;
-$color-deep-purple: #310c35;
-$color-purple-soft: #f3eaf2;
-$color-gold-light: #d8bd82;
+
+// Primary Blue Colors
+$color-primary: #2563EB;
+$color-primary-hover: #1D4ED8;
+$color-primary-dark: #173B70;
+$color-primary-deep: #102A50;
+
+$color-royal-blue: #2563EB;
+$color-deep-royal: #1D4ED8;
+$color-navy: #173B70;
+$color-midnight: #102A50;
+$color-blue-sky: #60A5FA;
+$color-blue-light: #DBEAFE;
+$color-blue-soft: #EDF4FF;
+$color-blue-pale: #F8FBFF;
+
+// Champagne Gold Colors
+$color-gold: #C49A52;
+$color-gold-dark: #A9823F;
+$color-gold-soft: #D8B978;
+$color-gold-light: #F4E8CC;
+
+// Neutral Colors
+$color-white: #FFFFFF;
+$color-ivory: #F8FBFF;
+$color-champagne: #F4E8CC;
+$color-text-primary: #263B5E;
+$color-text-secondary: #64748B;
+$color-text-muted: #94A3B8;
+$color-background: #FFFFFF;
+$color-background-soft: #F8FAFC;
+$color-border: #E2E8F0;
+$color-bronze: #A9823F;
+$color-brown: #263B5E;
+
+
 // Typography
-$font-heading: 'Cormorant Garamond',
-serif;
-$font-body: 'Lato',
-sans-serif;
-$font-arabic: 'Amiri',
-serif;
+$font-heading: 'Cormorant Garamond', serif;
+$font-body: 'Lato', sans-serif;
+$font-arabic: 'Amiri', serif;
+
 // Font weights
 $weight-light: 300;
 $weight-regular: 400;
 $weight-medium: 500;
 $weight-semibold: 600;
 $weight-bold: 700;
+
 // Spacing
 $spacing-xs: 0.25rem;
 $spacing-sm: 0.5rem;
@@ -38,19 +58,26 @@ $spacing-lg: 1.5rem;
 $spacing-xl: 2rem;
 $spacing-2xl: 3rem;
 $spacing-3xl: 4rem;
+
 // Layout
 $container-width: 1200px;
 $container-padding: 24px;
+
 // Borders
 $border-gold: 1px solid rgba($color-gold, 0.45);
 $border-radius-sm: 4px;
 $border-radius-md: 8px;
+
 // Shadows
-$shadow-soft: 0 8px 30px rgba(68, 56, 47, 0.08);
+$shadow-soft: 0 8px 30px rgba(37, 99, 235, 0.08);
+$shadow-blue: 0 8px 30px rgba(37, 99, 235, 0.12);
+$shadow-gold: 0 4px 20px rgba(196, 154, 82, 0.15);
+
 // Transitions
 $transition-fast: 0.2s ease;
 $transition-normal: 0.4s ease;
 $transition-slow: 0.8s ease;
+
 // Z-index
 $z-background: -1;
 $z-content: 1;

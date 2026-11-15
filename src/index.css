@@ -1,18 +1,43 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --primary: #2563EB;
+  --primary-hover: #1D4ED8;
+  --primary-dark: #173B70;
+  --primary-deep: #102A50;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --accent: #C49A52;
+  --accent-hover: #A9823F;
+  --accent-light: #F4E8CC;
+  --accent-soft: #D8B978;
+
+  --blue-sky: #60A5FA;
+  --blue-light: #DBEAFE;
+  --blue-soft: #EDF4FF;
+  --blue-pale: #F8FBFF;
+
+  --text-primary: #263B5E;
+  --text-secondary: #64748B;
+  --text-muted: #94A3B8;
+
+  --background: #FFFFFF;
+  --background-soft: #F8FAFC;
+
+  --border: #E2E8F0;
+
+  --text: #263B5E;
+  --text-h: #173B70;
+  --bg: #FFFFFF;
+  --code-bg: #F8FAFC;
+
+  --accent-bg: rgba(37, 99, 235, 0.08);
+  --accent-border: rgba(37, 99, 235, 0.35);
+  --social-bg: rgba(237, 244, 255, 0.7);
+
+  --shadow:
+    rgba(16, 42, 80, 0.08) 0 10px 15px -3px,
+    rgba(16, 42, 80, 0.04) 0 4px 6px -2px;
+
+  --sans: 'Lato', system-ui, -apple-system, sans-serif;
+  --heading: 'Cormorant Garamond', Georgia, serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -32,17 +57,22 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
+    --text: #94A3B8;
+    --text-h: #F8FAFC;
+    --bg: #102A50;
+    --border: #173B70;
+    --code-bg: #173B70;
+
+    --primary: #60A5FA;
+    --accent: #D8B978;
+    --accent-bg: rgba(96, 165, 250, 0.14);
+    --accent-border: rgba(96, 165, 250, 0.45);
+
+    --social-bg: rgba(23, 59, 112, 0.7);
+
     --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px,
+      rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
 
   #social .button-icon {
@@ -77,20 +107,24 @@ h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
   margin: 32px 0;
+
   @media (max-width: 1024px) {
     font-size: 36px;
     margin: 20px 0;
   }
 }
+
 h2 {
   font-size: 24px;
   line-height: 118%;
   letter-spacing: -0.24px;
   margin: 0 0 8px;
+
   @media (max-width: 1024px) {
     font-size: 20px;
   }
 }
+
 p {
   margin: 0;
 }

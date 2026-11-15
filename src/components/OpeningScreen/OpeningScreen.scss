@@ -1,11 +1,13 @@
 .opening-screen {
-    --opening-ivory: #fbf8f2;
-    --opening-purple: #4b0750;
-    --opening-purple-dark: #310c35;
-    --opening-purple-light: #74377a;
-    --opening-gold: #b5965a;
-    --opening-gold-light: #e8d3a5;
-    --opening-text: #584334;
+    --opening-ivory: #F8FBFF;
+    --opening-navy: #173B70;
+    --opening-midnight: #102A50;
+    --opening-royal: #2563EB;
+    --opening-royal-hover: #1D4ED8;
+    --opening-blue-light: #60A5FA;
+    --opening-gold: #C49A52;
+    --opening-gold-light: #F4E8CC;
+    --opening-text: #263B5E;
     inset: 0;
     z-index: 200;
     display: flex;
@@ -16,7 +18,7 @@
     min-height: 100svh;
     padding: 24px;
     overflow: hidden;
-    background: radial-gradient( ellipse at 50% 35%, #ffffff 0%, transparent 58%), radial-gradient( circle at 10% 90%, rgba(107, 40, 107, 0.08), transparent 35%), var(--opening-ivory);
+    background: radial-gradient( ellipse at 50% 35%, #ffffff 0%, transparent 58%), radial-gradient( circle at 10% 90%, rgba(37, 99, 235, 0.08), transparent 35%), var(--opening-ivory);
     color: var(--opening-text);
 }
 
@@ -24,7 +26,7 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: radial-gradient( circle at 80% 15%, rgba(181, 150, 90, 0.12), transparent 30%), radial-gradient( circle at 15% 70%, rgba(75, 7, 80, 0.07), transparent 34%);
+    background: radial-gradient( circle at 80% 15%, rgba(196, 154, 82, 0.12), transparent 30%), radial-gradient( circle at 15% 70%, rgba(37, 99, 235, 0.08), transparent 34%);
 }
 
 .opening-background-pattern {
@@ -32,7 +34,7 @@
     inset: 0;
     pointer-events: none;
     opacity: 0.14;
-    background-image: radial-gradient( rgba(181, 150, 90, 0.5) 0.7px, transparent 0.7px);
+    background-image: radial-gradient( rgba(196, 154, 82, 0.5) 0.7px, transparent 0.7px);
     background-size: 24px 24px;
     mask-image: linear-gradient( to bottom, transparent, black 20%, black 80%, transparent);
 }
@@ -48,11 +50,11 @@
     width: min(100%, 1500px);
     min-height: calc(100svh - 48px);
     padding: 45px 30px;
-    border: 1px solid rgba(181, 150, 90, 0.65);
-    outline: 1px solid rgba(181, 150, 90, 0.25);
+    border: 1px solid rgba(196, 154, 82, 0.65);
+    outline: 1px solid rgba(196, 154, 82, 0.25);
     outline-offset: -11px;
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: inset 0 0 70px rgba(255, 255, 255, 0.4), 0 20px 70px rgba(49, 12, 53, 0.035);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 70px rgba(255, 255, 255, 0.5), 0 20px 70px rgba(16, 42, 80, 0.04);
 }
 
 .frame-corner {
@@ -104,7 +106,7 @@
 
 .opening-bismillah {
     margin: 0;
-    color: var(--opening-purple);
+    color: var(--opening-navy);
     font-family: 'Amiri', serif;
     font-size: clamp(30px, 4vw, 46px);
     line-height: 1.8;
@@ -131,7 +133,7 @@
 
 .opening-eyebrow {
     margin: 0 0 12px;
-    color: var(--opening-purple-light);
+    color: var(--opening-royal);
     font-family: 'Lato', sans-serif;
     font-size: 11px;
     font-weight: 600;
@@ -140,7 +142,7 @@
 
 .opening-heading {
     margin: 0;
-    color: #70573c;
+    color: var(--opening-navy);
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: clamp(58px, 8vw, 94px);
     font-style: italic;
@@ -151,7 +153,7 @@
 .opening-description {
     max-width: 550px;
     margin: 20px auto 0;
-    color: #765f4b;
+    color: #64748B;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 1.9;
@@ -167,7 +169,7 @@
     flex-wrap: wrap;
     gap: 18px;
     margin-top: 30px;
-    color: var(--opening-purple);
+    color: var(--opening-navy);
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(25px, 3vw, 34px);
     font-style: italic;
@@ -196,9 +198,9 @@
     width: 145px;
     height: 145px;
     border-radius: 50%;
-    background: rgba(107, 40, 107, 0.17);
+    background: rgba(37, 99, 235, 0.2);
     filter: blur(25px);
-    opacity: 0.5;
+    opacity: 0.55;
 }
 
 .wax-seal {
@@ -210,18 +212,18 @@
     justify-content: center;
     width: 112px;
     height: 112px;
-    border: 4px solid rgba(232, 211, 165, 0.85);
+    border: 4px solid rgba(244, 232, 204, 0.9);
     border-radius: 50%;
-    background: radial-gradient( circle at 30% 25%, #925398, #4b0750 60%, #310c35);
-    color: #f3dfad;
-    box-shadow: 0 10px 25px rgba(49, 12, 53, 0.3), inset 0 2px 7px rgba(255, 255, 255, 0.28), inset 0 -5px 10px rgba(0, 0, 0, 0.18);
+    background: radial-gradient( circle at 30% 25%, #2563EB, #173B70 60%, #102A50);
+    color: #F4E8CC;
+    box-shadow: 0 10px 25px rgba(16, 42, 80, 0.35), inset 0 2px 7px rgba(255, 255, 255, 0.3), inset 0 -5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .wax-seal::before {
     position: absolute;
     content: '';
     inset: 6px;
-    border: 1px solid rgba(232, 211, 165, 0.6);
+    border: 1px solid rgba(244, 232, 204, 0.6);
     border-radius: 50%;
 }
 
@@ -279,7 +281,7 @@
 }
 
 
-/* Glass button */
+/* Royal Blue glass button */
 
 .open-invitation-button {
     position: relative;
@@ -291,20 +293,21 @@
     margin-bottom: 12px;
     padding: 19px 26px;
     overflow: hidden;
-    border: 1px solid rgba(181, 150, 90, 0.8);
+    border: 1px solid rgba(196, 154, 82, 0.8);
     border-radius: 12px;
-    background: linear-gradient( 135deg, rgba(75, 7, 80, 0.88), rgba(49, 12, 53, 0.94));
-    box-shadow: 0 12px 30px rgba(49, 12, 53, 0.18), inset 0 1px 1px rgba(255, 255, 255, 0.25);
-    color: #fff9eb;
+    background: linear-gradient( 135deg, rgba(23, 59, 112, 0.95), rgba(16, 42, 80, 0.98));
+    box-shadow: 0 12px 30px rgba(16, 42, 80, 0.22), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+    color: #FFFFFF;
     cursor: pointer;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
 }
 
 .open-invitation-button:hover:not(:disabled) {
     transform: translateY(-3px);
-    box-shadow: 0 16px 35px rgba(49, 12, 53, 0.25), 0 0 25px rgba(181, 150, 90, 0.2);
+    background: linear-gradient( 135deg, #173B70, #1D4ED8);
+    box-shadow: 0 16px 35px rgba(16, 42, 80, 0.32), 0 0 25px rgba(196, 154, 82, 0.25);
 }
 
 .open-invitation-button:disabled {
@@ -345,7 +348,7 @@
 
 .opening-caption {
     margin: 10px 0 0;
-    color: #9c8264;
+    color: #64748B;
     font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
     font-style: italic;
@@ -353,7 +356,7 @@
 
 .opening-footer {
     margin: 35px 0 0;
-    color: #9a7a53;
+    color: var(--opening-gold);
     font-family: 'Lato', sans-serif;
     font-size: 9px;
     letter-spacing: 0.35em;
