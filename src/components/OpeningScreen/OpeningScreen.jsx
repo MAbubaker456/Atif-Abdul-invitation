@@ -168,15 +168,13 @@ function OpeningScreen({ onOpenComplete, onStartOpening }) {
           <h1 className="opening-heading">You're Invited</h1>
 
           <p className="opening-description">
-            With the blessings of Allah and the love of our
-            families, we invite you to share in a beautiful
-            celebration.
+            With the blessings of Allah
+            and the love of our families,
+            we invite you to share in a beautiful celebration.
           </p>
 
           <div className="opening-couple-names">
-            <span>Mohammed Abdul Atif</span>
-            <i>&</i>
-            <span>Sadiya Firdous</span>
+            <span>The Abdul's Family</span>
           </div>
 
           <div className="seal-stage">
@@ -190,8 +188,8 @@ function OpeningScreen({ onOpenComplete, onStartOpening }) {
             <div className="seal-glow" ref={sealGlowRef} />
 
             <div className="wax-seal" ref={sealRef}>
-              <span className="wax-monogram">A&S</span>
-              <span className="wax-seal-star">✦</span>
+              {/* <span className="wax-seal-star">✦</span> */}
+              <span className="wax-monogram ">🌙💫</span>
             </div>
           </div>
 

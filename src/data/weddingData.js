@@ -35,7 +35,7 @@ const weddingData = {
 
         bismillah: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
 
-        weddingDate: '10 Janualy 2027',
+        weddingDate: '10 January 2027',
         day: 'Sunday',
         hijriDate: 'Shaban-ul-Moazzam 1448 Hijri',
     },
@@ -43,7 +43,7 @@ const weddingData = {
     events: [{
         id: 'nikah',
         name: 'Nikah Ceremony',
-        date: '10 Janualy 2027',
+        date: '10 January 2027',
         day: 'Sunday',
         hijriDate: 'Shaban-ul-Moazzam 1448 Hijri',
         time: 'After Asr prayers, 4:30 PM, Masjid-e-Tauheed Phulong , Nizamabad',
