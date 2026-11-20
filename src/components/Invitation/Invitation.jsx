@@ -94,7 +94,8 @@ function Invitation() {
               UNDER THE GUARDIANSHIP OF
             </p>
 
-            <div className="guardians-list">
+            {/* <div className="guardians-list"> */}
+            <div className="flex justify-center items-center text-center gap-8 flex-wrap">
               {guardians.map((guardian) => (
                 <div className="guardian-item" key={guardian.names}>
                   <h3 className='text-light-gold'>{guardian.names}</h3>

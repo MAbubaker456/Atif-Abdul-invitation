@@ -12,6 +12,7 @@
     border: 1px solid rgba(196, 154, 82, 0.5);
     background: rgba(255, 255, 255, 0.75);
     box-shadow: 0 8px 30px rgba(37, 99, 235, 0.06);
+
     &::before {
         content: '';
         display: block;
@@ -28,11 +29,13 @@
 
 .closing-ornament {
     display: block;
-    color: #2563EB;
+    // color: #2563EB;
+    color: #C49A52;
     font-family: $font-heading;
     font-size: 45px;
     line-height: 1;
     margin-bottom: 20px;
+
     &--bottom {
         margin: 30px 0 0;
         transform: rotate(180deg);
@@ -62,6 +65,7 @@
     gap: 14px;
     color: #C49A52;
     margin: 25px 0;
+
     span {
         width: 55px;
         height: 1px;
@@ -111,11 +115,13 @@
     gap: 7px;
     padding-top: 28px;
     text-align: center;
+
     p {
         color: #94A3B8;
         font-size: 9px;
         letter-spacing: 3px;
     }
+
     span {
         color: #94A3B8;
         font-size: 8px;
@@ -127,15 +133,19 @@
     .closing-section {
         padding: 55px 14px 25px;
     }
+
     .closing-content {
         padding: 50px 18px;
     }
+
     .closing-message {
         font-size: 19px;
     }
+
     .closing-footer-message {
         font-size: 18px;
     }
+
     .closing-couple {
         font-size: 29px;
     }

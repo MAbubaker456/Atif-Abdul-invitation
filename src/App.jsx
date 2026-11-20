@@ -1,6 +1,7 @@
 
 import { useRef, useState } from 'react';
 import gsap from 'gsap';
+import Footer from './components/Footer';
 
 import StarField from './components/StarField/StarField';
 
@@ -60,7 +61,7 @@ function App() {
         />
       ) : (
         <>
-        <StarField />
+          <StarField />
           <Invitation />
           <Events />
           <Countdown />
@@ -69,6 +70,7 @@ function App() {
           <MusicPlayer audioRef={audioRef} />
         </>
       )}
+      <Footer />
     </>
   );
 }

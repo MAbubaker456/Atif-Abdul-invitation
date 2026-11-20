@@ -4,8 +4,8 @@ const weddingData = {
             name: 'Mohammed Abdul Atif',
             arabicName: '',
             qualification: 'MBA (Sales & Marketing)',
-            parents: 'Son of Mrs. & Mr. Mohammed Abdul Rub',
-            familyDetails: [''],
+            parents: ['Grandson of Late Mrs. & Mr. Mohammed Abdul Jabbar (Forest Range Officer) '],
+            familyDetails: ['Son of Mrs. & Mr. Mohammed Abdul Rub'],
         },
 
         bride: {
@@ -18,14 +18,14 @@ const weddingData = {
     },
 
     guardians: [{
-        names: 'Mrs. & Mr. Mohammed Abdul rub',
+        names: 'Mrs. & Mr. Mohammed Abdul Muqtadir',
         designation: '',
     },
-    {
-        names: 'Late Mr. Mohammed Naseer Ahmed',
-        // qualification: 'dulhan ke dad ka qualification',
-        designation: '',
-    },
+        // {
+        //     names: 'Late Mr. Mohammed Naseer Ahmed',
+        //     // qualification: 'dulhan ke dad ka qualification',
+        //     designation: '',
+        // },
     ],
 
     invitation: {
